@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="src/style.galery.css">
+    <title>Galerie St François d'Assise de KM</title>
+</head>
+
+<body>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="accueil.html">ACCUEIL</a></li>
+                <li><a href="galerie.html">GALERIE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="forum.html">FORUM</a></li>
+            </ul>
+        </nav>
+        <div id="menuBtn">
+            <img src="img/menu.png" id="menu">
+        </div>
+    </div>
+    <div class="container">
+        <h1>Galerie de notre EGLISE, FBB Chantre de PSFAK</h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="gallery/media1.jpg" width="100%">
+                    <div class="play-btn" onclick="playVideo('gallery/media1.mp4')"><i class="far fa-play-circle"></i></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="gallery/fbb1.jpg" width="30%">
+                        <div class="play-btn" onclick="playVideo('gallery/fbb1.webm')"><i class="far fa-play-circle"></i></div>
+                    </div>
+                    <p>Fabrice Bretrand Biagui - #Thank you Jésus# feat Philippe Coly Clip Officiel by HLAB PRO <br>disponible sur YouTube</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="gallery/fbb2.jpg">
+                        <div class="play-btn" onclick="playVideo('gallery/fbb2.webm')"><i class="far fa-play-circle"></i></div>
+                    </div>
+                    <p>Fabrice Bertrand BIAGUI - Chantre de l'Eternel #Wanted Clip Officiel By HLAB PRO <br> disponible sur YouTube</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="gallery/fg1.jpg" width="30%">
+                        <div class="play-btn" onclick="playVideo('gallery/fg1.webm')"><i class="far fa-play-circle"></i></div>
+                    </div>
+                    <p>Fulgence Gackou - #Diambaar (clip officiel) disponible sur YouTube</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay id="myVideo">
+            <source src="gallery/fbb1.webm" type="video/mp4">
+        </video>
+        <div class="close-btn" onclick="stopVideo()"><i class="fas fa-times"></i></div>
+    </div>
+
+    <script>
+        var videoPlayer = document.getElementById("videoPlayer");
+        var myVideo = document.getElementById("myVideo");
+        var vid = document.getElementById("vid");
+
+        function stopVideo() {
+
+            videoPlayer.style.display = "none";
+            videoPlayer.muted = true;
+        }
+
+        function playVideo(file) {
+            myVideo.src = file;
+            videoPlayer.style.display = "block";
+        }
+    </script>
+    <script src="src/script.js"></script>
+
+</body>
+
+</html>

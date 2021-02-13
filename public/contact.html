@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Contactez nous !</title>
+</head>
+
+<body>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="accueil.html">ACCUEIL</a></li>
+                <li><a href="galerie.html">GALERIE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="forum.html">FORUM</a></li>
+            </ul>
+        </nav>
+        <div id="menuBtn">
+            <img src="img/menu.png" id="menu">
+        </div>
+    </div>
+    <!-- contact section start -->
+    <div class="contact-section">
+        <div class="contact-info">
+            <div><a href="https://goo.gl/maps/64PxQFeKq7ForZnNA" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i>Dakar, Keur Massar</a></div>
+            <div><i class="fas fa-envelope"></i>gomisjoepierre@gmail.com</div>
+            <div><i class="fas fa-phone"></i>+221 78 153 17 36</div>
+            <div><i class="fas fa-clock"></i>Lundi - Vendredi 09:00 à 16:45</div>
+        </div>
+        <div class="contact-form">
+            <h2>Contactez nous !</h2>
+            <form action="https://api.web3forms.com/submit" method="post">
+                <input type="hidden" name="apikey" value="d0b64997-a917-4713-b506-f520ea7ee133">
+                <input class="text-box" type="text" name="nom" id="nom" placeholder="Nom" required>
+                <input class="text-box" type="email" name="email" id="email" placeholder="Email" required>
+                <textarea name="message" id="message" rows="5" placeholder="Saisissez votre message" required></textarea>
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                <input class="send-btn" type="submit" name="submit" value="Envoyer">
+            </form>
+        </div>
+    </div>
+    <!-- contact section end -->
+
+    <script src="src/script.js"></script>
+</body>
+
+</html>
